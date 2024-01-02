@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <script src="https://kit.fontawesome.com/efebd20f0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo ">
+
+            <div class="logo-name mt-5">
+                <img style="width: 216px;" class="img-fluid" src="./images/logo1.png" alt="">
+            </div>
+        </a>
+        <ul class="side-menu p-0">
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./index.html"><i class='bx bxs-dashboard'></i>Dashboard
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./issue.html">
+                    <i class='bx bx-store-alt'></i>Issue/Return
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./manage.html"><i class='bx bx-analyse'></i>Manage
+                </a>
+            </li>
+            <li class="sidebar-item active">
+                <a class=" sidebar-link" href="./reports.html"><i class='bx bx-message-square-dots'></i>Reports
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-group'></i>Admin
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-cog'></i>Modules
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed" data-bs-target="#encode" data-bs-toggle="collapse"
+                    aria-expanded="false">
+                    <i class=" fas fa-map-marker-alt f-icon"></i>
+                    Tracking
+                </a>
+                <ul id="encode" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="./checkout.html" class="sidebar-link">
+                            <i class="fas fa-share f-icon"></i>
+                            Checkout
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fas fa-reply f-icon"></i> Check in
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-cog'></i>Modules
+                </a>
+            </li>
+
+        </ul>
+        <ul class="side-menu p-0">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                RFID
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Reports</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Reports</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- ///////////content////////////// -->
+            <div class="content-body b-1">
+
+                <div class="dropdown  ">
+                    <div style="padding-left: 10px;" class="flex-s justify-content-start gap-3">
+                        <div class="border-set flex-s">
+                            <img width="20" height="20"
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-report-project-planing-flatart-icons-outline-flatarticons-1.png"
+                                alt="external-report-project-planing-flatart-icons-outline-flatarticons-1" />
+                        </div>
+                        <div>
+                            <h3>REPORTS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-s mt-5 pt-5">
+                    <ul class="grid-2  nav-pills" id="pills-tab" role="tablist">
+                        <li class="bx-2" role="presentation">
+                            <a href="" class="active" id="pills-armour-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-armour" type="button" role="tab" aria-controls="pills-armour"
+                                aria-selected="true">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50"
+                                        src="https://img.icons8.com/fluency-systems-regular/48/catapult-firing.png"
+                                        alt="catapult-firing" />
+                                </div>
+                                <p class="text-center">ARMOUR</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-wepon-tab" data-bs-toggle="pill" data-bs-target="#pills-wepon"
+                                type="button" role="tab" aria-controls="pills-wepon" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/gun.png"
+                                        alt="gun" />
+                                </div>
+                                <p class="text-center">WEAPONS</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-gear-tab" data-bs-toggle="pill" data-bs-target="#pills-gear"
+                                type="button" role="tab" aria-controls="pills-gear" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50"
+                                        src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-gear-labour-day-nawicon-detailed-outline-nawicon.png"
+                                        alt="external-gear-labour-day-nawicon-detailed-outline-nawicon" />
+                                </div>
+                                <p class="text-center">GEAR</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-ammu-tab" data-bs-toggle="pill" data-bs-target="#pills-ammu"
+                                type="button" role="tab" aria-controls="pills-ammu" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/gun.png"
+                                        alt="gun" />
+                                </div>
+                                <p class="text-center">AMMUNITION</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-case-tab" data-bs-toggle="pill" data-bs-target="#pills-case"
+                                type="button" role="tab" aria-controls="pills-case" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50"
+                                        src="https://img.icons8.com/external-good-lines-kalash/32/000000/external-case-medicine-and-medical-diagnostics-good-lines-kalash.png"
+                                        alt="external-case-medicine-and-medical-diagnostics-good-lines-kalash" />
+                                </div>
+                                <p class="text-center">CASE</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-persnol-tab" data-bs-toggle="pill" data-bs-target="#pills-persnol"
+                                type="button" role="tab" aria-controls="pills-persnol" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/gun.png"
+                                        alt="gun" />
+                                </div>
+                                <p class="text-center">PERSONNEL</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-roster-tab" data-bs-toggle="pill" data-bs-target="#pills-roster"
+                                type="button" role="tab" aria-controls="pills-roster" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50" src="https://img.icons8.com/dotty/80/shortlist.png"
+                                        alt="shortlist" />
+                                </div>
+                                <p class="text-center">ROSTER</p>
+                            </a>
+                        </li>
+                        <li class="bx-2" role="presentation">
+                            <a href="" id="pills-sched-tab" data-bs-toggle="pill" data-bs-target="#pills-sched"
+                                type="button" role="tab" aria-controls="pills-sched" aria-selected="false">
+                                <div class="flex-s  mb-2 border box-set1 ">
+                                    <img width="50" height="50"
+                                        src="https://img.icons8.com/dotty/80/appointment-scheduling.png"
+                                        alt="appointment-scheduling" />
+                                </div>
+                                <p class="text-center">SCHEDULING</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content mt-5" id="pills-tabContent">
+                    <!-- /////////////////armour///////////////////////////// -->
+                    <div class="tab-pane fade show active" id="pills-armour" role="tabpanel"
+                        aria-labelledby="pills-armour-tab" tabindex="0">
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-8 text-start">
+                                    <div class="flex-s  justify-content-start gap-2">
+                                        <li class="bx-2">
+                                            <a href="" class="active">
+                                                <div style="padding: 6px;" class="flex-s  mb-2 border box-set1 ">
+                                                    <img width="32" height="32"
+                                                        src="https://img.icons8.com/windows/32/macbook-idea.png"
+                                                        alt="macbook-idea" />
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <h3>ARMORY REPORT</h3>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-4 text-end">
+                                    <button class="btn btn-primary">PRINT</button>
+                                    <button class="btn btn-success">SEND</button>
+                                    <button class="btn btn-secondary">SAVE</button>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Photo</th>
+                                                <th>Itme Type</th>
+                                                <th>Make</th>
+                                                <th>Model</th>
+                                                <th>Serial R</th>
+                                                <th>Status</th>
+                                                <th>Location</th>
+                                                <th>Test Due Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-gun-weapon-kiranshastry-gradient-kiranshastry.png"
+                                                        alt="external-gun-weapon-kiranshastry-gradient-kiranshastry" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M17</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>20 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/ios/50/gun.png" alt="gun" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M18</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>21 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/fluency/48/mauser-gun.png"
+                                                        alt="mauser-gun" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M14</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>22 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/color/48/gun.png" alt="gun" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M1641</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>23 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/plasticine/100/gun.png" alt="gun" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M17</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>20 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/external-others-inmotus-design/67/external-Weapon-army-guns-others-inmotus-design-12.png"
+                                                        alt="external-Weapon-army-guns-others-inmotus-design-12" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M17</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>20 june 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="64" height="64"
+                                                        src="https://img.icons8.com/external-others-inmotus-design/67/external-Weapon-army-guns-others-inmotus-design-15.png"
+                                                        alt="external-Weapon-army-guns-others-inmotus-design-15" />
+                                                </td>
+                                                <td>Pistol</td>
+                                                <td>colt</td>
+                                                <td>M17</td>
+                                                <td>0109</td>
+                                                <td>Active</td>
+                                                <td>Armory #1</td>
+                                                <td>20 june 2022</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- //////////////////////////Wepons////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-wepon" role="tabpanel" aria-labelledby="pills-wepon-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+                    <!-- //////////////////////////gear////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-gear" role="tabpanel" aria-labelledby="pills-gear-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+                    <!-- //////////////////////////Ammunication////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-ammu" role="tabpanel" aria-labelledby="pills-ammu-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+                    <!-- //////////////////////////Case////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-case" role="tabpanel" aria-labelledby="pills-case-tab"
+                        tabindex="0">
+
+                    </div>
+
+                    <!-- //////////////////////////Persnonnel////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-persnol" role="tabpanel" aria-labelledby="pills-persnol-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+                    <!-- //////////////////////////Roster////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-roster" role="tabpanel" aria-labelledby="pills-roster-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+                    <!-- //////////////////////////Scheduling////////////////////////////// -->
+                    <div class="tab-pane fade" id="pills-sched" role="tabpanel" aria-labelledby="pills-sched-tab"
+                        tabindex="0">
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- End of Reminders-->
+
+
+
+        </main>
+
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+</html>

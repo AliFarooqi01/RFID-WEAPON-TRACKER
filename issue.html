@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #2 | AsmrProg</title>
+    <script src="https://kit.fontawesome.com/efebd20f0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo ">
+
+            <div class="logo-name mt-5">
+                <img style="width: 216px;" class="img-fluid" src="./images/logo1.png" alt="">
+            </div>
+        </a>
+        <ul class="side-menu p-0">
+            <li class=" sidebar-item">
+                <a class="sidebar-link" href="./index.html"><i class='bx bxs-dashboard'></i>Dashboard
+                </a>
+            </li>
+            <li class="sidebar-item active">
+                <a class="sidebar-link" href="./issue.html">
+                    <i class='bx bx-store-alt'></i>Issue/Return
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./manage.html"><i class='bx bx-analyse'></i>Manage
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./reports.html"><i class='bx bx-message-square-dots'></i>Reports
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-group'></i>Admin
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-cog'></i>Modules
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed" data-bs-target="#encode" data-bs-toggle="collapse"
+                    aria-expanded="false">
+                    <i class=" fas fa-map-marker-alt f-icon"></i>
+                    Tracking
+                </a>
+                <ul id="encode" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="./checkout.html" class="sidebar-link">
+                            <i class="fas fa-share f-icon"></i>
+                            Checkout
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fas fa-reply f-icon"></i> Check in
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#"><i class='bx bx-cog'></i>Modules
+                </a>
+            </li>
+
+        </ul>
+        <ul class="side-menu p-0">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                RFID
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Issue & Return</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analytics
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Issue & Return</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- ///////////content////////////// -->
+            <div class="content-body">
+
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-6 col-12 find-sec">
+                        <div class="dropdown d-flex align-items-center justify-content-center ">
+                            <div class="post-1 ">
+
+                                <select class="form-select form-select-sm res1 mb-2"
+                                    aria-label=".form-select-sm example">
+                                    <ul>
+                                        <li>
+                                            <option selected> SELECT POST</option>
+                                        </li>
+                                        <li>
+                                            <option value="1"></option>
+                                        </li>
+                                    </ul>
+                                </select>
+                                <button class="btn btn-primary res1 mb-2">CAPTURE FINGER
+                                    PRINT</button>
+                                <div class="input-group inp1 res1">
+                                    <i class="fa-solid fa-magnifying-glass s1" aria-hidden="true"></i>
+                                    <input type="search" class="form-control ser" placeholder="search">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-12  issues-sec ">
+                        <div style="border: none;" class="dropdown d-flex align-items-center justify-content-center ">
+                            <div class="post-1 ">
+                                <div class=" mb-5">
+                                    <div class="box-round flex-s bg-green mb-2 ">
+                                        <i class="fas fa-arrow-up"></i>
+                                    </div>
+                                    <p class="text-center">issue</p>
+                                </div>
+                                <div class=" mb-5">
+                                    <div class="box-round flex-s  bg-red mb-2">
+                                        <i class="fas fa-arrow-down"></i>
+
+                                    </div>
+                                    <p class="text-center ">Return</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- End of Reminders-->
+
+
+
+        </main>
+
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+</html>
