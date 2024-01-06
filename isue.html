@@ -119,13 +119,13 @@
             </div>
 
             <!-- ///////////content////////////// -->
-            <div class="content-body flex-s">
+            <div class="content-body flex-s issues-sec1">
 
                 <div class="container">
                     <div class="card mb-3" style="max-width: 800px;">
                         <div class="row g-0">
                             <div class="col-12">
-                                <div class="card-body flex-s justify-content-between gap-3">
+                                <div class="c-d1 card-body flex-s justify-content-between gap-3">
                                     <h4 class="card-title">ITEM TO ISSUE</h4>
                                     <div class="flex-s gap-2">
                                         <div style="width:30px; height:30px;"
@@ -133,8 +133,8 @@
                                         <p class="mb-0 text-danger">UNRETURNED ITEMS</p>
                                     </div>
                                     <div class="flex-s profile gap-2 ">
-                                        <img class="rounded-circle" width="50px" height="50px"
-                                            src="./images/man1.jfif" alt="">
+                                        <img class="rounded-circle" width="50px" height="50px" src="./images/man1.jfif"
+                                            alt="">
                                         <div>
                                             <h6 class="card-title">ALI FAROOQI </h6>
                                             <span>ID # 12345-6789</span>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="card-body">
+                                <div class="card-body c-d2">
                                     <div class="search-sec search-sec1">
                                         <div class="border border-danger border-2 p-1 position-relative">
                                             <div class="profile gap-2 ">
@@ -164,6 +164,7 @@
                                                 class="ms-4 btn btn-danger position-absolute bottom-0 mb-3  ml-4">
                                                 <i class="fas fa-close"></i>
                                             </button>
+
                                         </div>
                                         <div class="border border-info border-2 p-1 position-relative">
                                             <div class="profile gap-2 ">
@@ -309,201 +310,206 @@
                                 </div>
 
                                 <div class="col-12 border">
-                                    <div class="card-body p-2">
-                                        <div class="flex-s justify-content-between">
-                                            <div>
-                                                <h4><i class="far fa-check-circle"></i> CUSTODY ACCEPTED </h4>
-                                            </div>
-                                            <div class="flex-s gap-2">
+                                    <div class="card-body c-d3 p-2">
+                                        <div class=" ">
+
+                                            <div class="flex-s justify-content-around add-item-box">
+                                                <div>
+                                                    <h4><i class="far fa-check-circle"></i> CUSTODY ACCEPTED </h4>
+                                                </div>
                                                 <p class="mb-0 text-primary">view Report</p>
-                                                <button type="button" class="btn bg-light border" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">Add Item</button>
-                                                <button class="btn btn-danger">Cancel </button>
-                                                <button class="btn btn-success">Done </button>
+                                                <div>
+                                                    <button type="button" class="btn bg-light border"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                                                        Item</button>
+                                                    <button class="btn btn-danger">Cancel </button>
+                                                    <button class="btn btn-success">Done </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Button trigger modal -->
+                                        <!-- Button trigger modal -->
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
+
+
+
+
                 </div>
+                <!-- End of Reminders-->
+                <!-- /////ADD ITEM MODAL --------------////////////// -->
 
 
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ADD ITEM</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Item Lookup:</h4>
+                                        <div class="flex-s justify-content-start gap-2 p-2 ">
+                                            <p class="fw-bold">TYPE:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>GUN</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-s justify-content-start gap-2 p-2">
+                                            <p class="fw-bold">MAKE:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>COLT</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-s justify-content-start gap-2 p-2">
+                                            <p class="fw-bold">MODEL:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>M911</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-s justify-content-start gap-2 p-2">
+                                            <p class="fw-bold">SLOT:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>0057</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-s justify-content-start gap-2 p-2">
+                                            <p class="fw-bold">SERIAL:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>12345-6789</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-s justify-content-start gap-2 p-2">
+                                            <p class="fw-bold">BUT:</p>
+                                            <select class="form-select form-select-sm rounded-pill"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>745-6574892</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
 
 
-
-            </div>
-            <!-- End of Reminders-->
-            <!-- /////ADD ITEM MODAL --------------////////////// -->
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">ADD ITEM</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4>Item Lookup:</h4>
-                                    <div class="flex-s justify-content-start gap-2 p-2 ">
-                                        <p class="fw-bold">TYPE:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>GUN</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
                                     </div>
-                                    <div class="flex-s justify-content-start gap-2 p-2">
-                                        <p class="fw-bold">MAKE:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>COLT</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-s justify-content-start gap-2 p-2">
-                                        <p class="fw-bold">MODEL:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>M911</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-s justify-content-start gap-2 p-2">
-                                        <p class="fw-bold">SLOT:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>0057</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-s justify-content-start gap-2 p-2">
-                                        <p class="fw-bold">SERIAL:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>12345-6789</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-s justify-content-start gap-2 p-2">
-                                        <p class="fw-bold">BUT:</p>
-                                        <select class="form-select form-select-sm rounded-pill"
-                                            aria-label=".form-select-sm example">
-                                            <option selected>745-6574892</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Quick Search</h4>
+                                        <div class="flex-s justify-content-start gap-2 p-2 ">
+                                            <p class="fw-bold">ID#</p>
+                                            <input type="search" class="form-control rounded-pill"
+                                                placeholder="Enter ID">
+                                        </div>
+                                        <div class="rs-search mt-2">
+                                            <h6>Search Result :</h6>
+                                            <div class="flex-s justify-content-start mt-2 gap-3">
+                                                <div>
+                                                    <img width="100px" src="./images/g3.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>COLT M911</h6>
+                                                    <p>#12345-1424</p>
 
+                                                    <div class="p-2 text-center bg-primary rounded text-white">
+                                                        00657
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-50 border border-info border-2 p-1 mt-2">
+                                                <div class="d-flex align-items-start profile gap-2 align-items-unset ">
+                                                    <i class="text-success far fa-check-circle"></i>
+
+                                                    <div>
+                                                        <h6 class="card-title">MAGAZINE 31 </h6>
+                                                        <span>12345-6789</span>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="d-flex align-items-start gap-1">
+                                                    <select style="width: 60px;" class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                    <div>
+                                                        <span style="font-size: 13px;" class="mt-1">12345-6789</span>
+                                                        <p class="fw-bold text-primary">HOTE</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="w-50 border border-info border-2 p-1 mt-2">
+                                                <div class="d-flex align-items-start profile gap-2 align-items-unset ">
+                                                    <i class="text-success far fa-check-circle"></i>
+
+                                                    <div>
+                                                        <h6 class="card-title">MAGAZINE 41 </h6>
+                                                        <span>12345-6789</span>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="d-flex align-items-start gap-1">
+                                                    <select style="width: 60px;" class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                    <div>
+                                                        <span style="font-size: 13px;" class="mt-1">12345-6789</span>
+                                                        <p class="fw-bold text-primary">HOTE</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
-                                <div class="col-md-6">
-                                    <h4>Quick Search</h4>
-                                    <div class="flex-s justify-content-start gap-2 p-2 ">
-                                        <p class="fw-bold">ID#</p>
-                                        <input type="search" class="form-control rounded-pill" placeholder="Enter ID">
-                                    </div>
-                                    <div class="rs-search mt-2">
-                                        <h6>Search Result :</h6>
-                                        <div class="flex-s justify-content-start mt-2 gap-3">
-                                            <div>
-                                                <img width="100px" src="./images/g3.png" alt="">
-                                            </div>
-                                            <div>
-                                                <h6>COLT M911</h6>
-                                                <p>#12345-1424</p>
-
-                                                <div class="p-2 text-center bg-primary rounded text-white">
-                                                    00657
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-50 border border-info border-2 p-1 mt-2">
-                                            <div class="d-flex align-items-start profile gap-2 align-items-unset ">
-                                                <i class="text-success far fa-check-circle"></i>
-
-                                                <div>
-                                                    <h6 class="card-title">MAGAZINE 31 </h6>
-                                                    <span>12345-6789</span>
-
-                                                </div>
-
-
-                                            </div>
-                                            <div class="d-flex align-items-start gap-1">
-                                                <select style="width: 60px;" class="form-select form-select-sm"
-                                                    aria-label=".form-select-sm example">
-                                                    <option selected>0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
-                                                <div>
-                                                    <span style="font-size: 13px;" class="mt-1">12345-6789</span>
-                                                    <p class="fw-bold text-primary">HOTE</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="w-50 border border-info border-2 p-1 mt-2">
-                                            <div class="d-flex align-items-start profile gap-2 align-items-unset ">
-                                                <i class="text-success far fa-check-circle"></i>
-
-                                                <div>
-                                                    <h6 class="card-title">MAGAZINE 41 </h6>
-                                                    <span>12345-6789</span>
-
-                                                </div>
-
-
-                                            </div>
-                                            <div class="d-flex align-items-start gap-1">
-                                                <select style="width: 60px;" class="form-select form-select-sm"
-                                                    aria-label=".form-select-sm example">
-                                                    <option selected>0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
-                                                <div>
-                                                    <span style="font-size: 13px;" class="mt-1">12345-6789</span>
-                                                    <p class="fw-bold text-primary">HOTE</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">ADD </button>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">ADD </button>
-                        </div>
                     </div>
                 </div>
-            </div>
 
 
 

@@ -678,11 +678,46 @@ body {
         width: calc(100% - 60px);
         left: 200px;
     }
+    .grid-2 {
+        grid-template-columns: 1fr auto;
+    }
+    .admin-grid{
+        grid-template-columns: 1fr auto !important;
+        
+    }
+    .search-sec {
+        grid-template-columns: 1fr 1fr;
+    }
+    .issues-sec1 .c-d1{
+        display: block;
+        text-align: center;
+        line-height: 2.4rem;
+    }
+    .issues-sec1 .c-d2 button{
+        display: none;
+    }
+    .issues-sec1 .c-d2 .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .issues-sec1 .c-d3 .add-item-box{
+        display: block;
+    }
 
 }
+@media screen and (min-width: 768px)  and (max-width: 1024px){
+    .issues-sec1 .c-d2 button{
+        display: none;
+    }
+    .issues-sec1 .c-d2 .grid-2{
+        grid-template-columns: 1fr auto;
+    }
+    .issues-sec1 .c-d2 .add-item-box{
 
+    }
+
+}
 @media screen and (max-width: 576px) {
-
+    
     .content nav form .form-input input {
         display: none;
     }
