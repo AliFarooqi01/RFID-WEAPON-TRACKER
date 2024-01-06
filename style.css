@@ -81,6 +81,17 @@ body.dark {
     --grey: #25252c;
     --dark: #fbfbfb
 }
+body.dark p , 
+body.dark h3,
+body.dark label,
+body.dark .find-sec .dropdown
+{
+    border-color:#fff ;
+    color: #fff ;
+}
+body.dark h6{
+    color: #181a1e !important;
+}
 
 body {
     font-family: 'Poppins', sans-serif !important;
